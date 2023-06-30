@@ -165,12 +165,12 @@ class FrankaConstants:
 
     WORKSPACE_WALLS = np.array([
         # sides
-        [0.15, 0.46, 0.5, 0, 0, 0, 1.2, 0.01, 1.1],
-        [0.15, -0.46, 0.5, 0, 0, 0, 1.2, 0.01, 1.1],
+        [0.15, 1.5, 0.5, 0, 0, 0, 1.2, 0.01, 1.1],
+        [0.15, -1.5, 0.5, 0, 0, 0, 1.2, 0.01, 1.1],
         # back
-        [-0.41, 0, 0.5, 0, 0, 0, 0.01, 1, 1.1],
+        [-0.38, 0, 0.5, 0, 0, 0, 0.01, 1, 1.1],
         # front
-        [0.75, 0, 0.5, 0, 0, 0, 0.01, 1, 1.1],
+        [1.7, 0, 0.5, 0, 0, 0, 0.01, 1, 1.1],
         # top
         [0.2, 0, 1, 0, 0, 0, 1.2, 1, 0.01],
         # bottom
@@ -178,6 +178,7 @@ class FrankaConstants:
     ])
 
     DEFAULT_SENSOR_PUBLISHER_TOPIC = 'franka_ros_interface/sensor'
+    ALTERNATIVE_SENSOR_PUBLISHER_TOPIC = 'franka_ros_interface_1/sensor'
     DYNAMIC_SKILL_WAIT_TIME = 0.3
 
     DEFAULT_HFPC_FORCE_GAIN = [0.1] * 6
